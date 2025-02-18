@@ -20,16 +20,60 @@
 
     <main>
         <section id="forside">
+            <div class="background-effect"></div> <!-- New div for the background -->
             <h1>Portfolio</h1>
-            <p class="subtitle">Multimedie designer Grafisk designer & UX/UI</p>
-            <div class="images">
-                <img src="assets/ossi1.jpg" alt="Billede 1" class="image1">
-                <img src="assets/ossi2.jpg" alt="Billede 2" class="image2">
+            <p id="subtitle" class="subtitle">Multimedie designer Grafisk designer & UX/UI</p>
+            <div class="images-container">
+                <div class="vertical-line"></div>
+                <div class="images">
+                    <img src="assets/ossi2.jpg" alt="Billede 1" class="image1">
+                    <img src="assets/ossi1.jpg" alt="Billede 2" class="image2">
+                </div>
             </div>
-            <p class="contact">@2025</p>
-            <h2>Kontakt her</h2>
         </section>
     </main>
+
+    <aside class="attention">
+        <section>
+            <div>
+                <p>Kontakt mig her</p>
+            </div>
+            <button>
+                <p>klik her</p>
+                <img src="assets/outlinefugl.png" alt="fugllogo">
+            </button>
+        </section>
+    </aside >
+
+    <footer class="footer-section">
+        <section class="footer-content">
+            <article class="contact-info">
+                <p>Ingen vej uden om nu</p>
+                <div>
+                    <img src="assets/phone.png" alt="Phone Icon">
+                    <p>+45 22 58 03 08</p>
+                </div>
+                <div>
+                    <img src="assets/mail.png" alt="Mail Icon">
+                    <p>Oscar@1024.dk</p>
+                </div>
+            </article>
+            <figure class="logo">
+                <img src="assets/Outlinelogo.png" alt="Oscar Logo" class="footerlogo">
+            </figure>
+            <aside class="contact-form">
+                <img src="assets/kontakt.png" alt="Form Background" class="form-background">
+                <div class="form-content">
+                    <input type="text" placeholder="Navn">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Telefon">
+                    <textarea placeholder="Besked"></textarea>
+                    <button>Tilmeld</button>
+                </div>
+            </aside>
+
+        </section>
+    </footer>
 
     <script src="js/java.js"></script>
 </body>

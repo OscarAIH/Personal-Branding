@@ -6,3 +6,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const subtitle = document.getElementById("subtitle");
+    subtitle.style.opacity = 20; // Fade in
+    subtitle.style.transform = "translateY(0)"; 
+});
