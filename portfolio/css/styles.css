@@ -57,70 +57,56 @@ main {
 h1 {
     font-size: 6em;
     color: #FBEE7E;
-    position: relative;
-    z-index: 2; /* Ensure h1 text is above the pseudo-element */
-    margin-left: 270px;
-    margin-top: 0;
-    letter-spacing: 40px;
-}
-
-h1::before {
-    content: '';
     position: absolute;
-    width: 520px; /* Keep the original width */
-    height: 300px; /* Keep the original height */
-    background-color: #1A1A13;
-    z-index: -1; /* Ensure it is behind the h1 text */
-    top: 0; /* Align with the top of h1 */
-    left: 0; /* Align with the left of h1 */
+    top: 15%; /* Centrerer vertikalt */
+    left: 50%; /* Centrerer horisontalt */
+    transform: translate(-50%, -50%); /* Justerer for præcis centrering */
+    z-index: 2;
+    margin: 0;
+    letter-spacing: 20px;
 }
 
 .subtitle {
     font-size: 15px;
     color: #FBEE7E;
     position: absolute;
-    top: 180px;
-    left: 270px;
+    top: 20%; /* Juster for at placere teksten korrekt under h1 */
+    left: 30%;
+    transform: translateX(-50%);
     z-index: 2;
-    opacity: 0; 
-    transition: opacity 5s ease, transform 5s ease; /* Smooth transition */
+    opacity: 1;
 }
 
 .images-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
-    margin-top: -211px;
+    margin-top: -50px; /* Juster efter behov */
 }
 
 .images {
     display: flex;
     gap: 20px;
-    margin-left: 360px;
     z-index: 1;
+    position: relative;
 }
 
-.image1, .image2 {
+.image1 {
     width: 300px;
     height: auto;
     border: 20px solid #1A1A13;
 }
 
 .image2 {
-    transform: rotate(5deg);
+    width: 300px;
+    height: auto;
+    border: 20px solid #1A1A13;
+    transform: rotate(10deg);
+    margin-top: 40px;
 }
 
-.vertical-line {
-    width: 300px;
-    height: 100vh;
-    background-color: #1A1A13;
-    margin-right: 20px;
-    position: fixed;
-    left: 255px;
-    top: 0;
-    z-index: -2;
-}
+
 
 .contact {
     font-size: 3em;
@@ -153,25 +139,21 @@ h2 {
 }
 
 .attention p {
-    font-size: 40px; /* Adjust font size if needed */
+    font-size: 50px; /* Adjust font size if needed */
     margin: 0; /* Remove default margin */
     color: #FBEE7E; /* Set text color to match the theme */
 }
 
-.attention p button {
-    color: #1A1A13;
-}
 
-.attention button {
-    background-color: #FBEE7E;
+.attention {
     color: #1A1A13;
     border: none;
-    padding: 10px 20px;
+    padding: 40px 20px;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -359,7 +341,6 @@ button img {
         top: auto; /* Remove top positioning */
         left: auto; /* Remove left positioning */
         transform: none; /* Remove transform */
-        z-index: ;
         letter-spacing: 10px; /* Reduce letter spacing */
     }
 
@@ -414,11 +395,7 @@ button img {
         display: none;
     }
 
-    /* Hide dark green stripes */
-    .vertical-line,
-    h1::before {
-        display: none;
-    }
+
 }
 
 @media (max-width: 480px) {
