@@ -1,4 +1,5 @@
 /* Side2 Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 #header2 {
     color: #1A1A13;
     padding: 5px 10px;
@@ -44,6 +45,16 @@ nav a.active {
 
 
 
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
 /* Project Video */
 .video1 {
     width: 100%;
@@ -55,10 +66,12 @@ nav a.active {
 
 .video2 {
     width: 100%;
-    height: 100%;
+    height: 400px;
     object-fit: cover;
     display: block;
     background-color: #1A1A13;
+    border: 15px solid #1A1A13;
+
 }
 
 /* Project Image */
@@ -253,14 +266,57 @@ nav a.active {
     transform: scale(1.05);
 }
 
-.kontakt:hover {
-    color: #FBEE7E;
-    background-color: #1A1A13;
-    padding: 8px 16px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    display: inline-block;
+/*knap funktion og styling */
+.attention2 {
+    margin-top: 100px; 
+    margin-bottom: -10px;
+    background-color: #1A1A13; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 40px 20px;
 }
+
+.attention2 section {
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.attention2 p {
+    font-size: 50px; 
+    margin: 0; 
+    color: #FBEE7E; 
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contact-button {
+    font-size: 18px; 
+    color: #1A1A13;
+    background-color: #FBEE7E;
+    border: none;
+    padding: 8px 16px; 
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    text-decoration: none; 
+    transition: transform 0.3s ease;
+}
+
+.contact-button img {
+    height: 20px; 
+    width: auto;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
+}
+/*knap funktion og styling slutter her */
 
 /* Responsive design */
 @media (max-width: 1600px) {
@@ -322,15 +378,55 @@ nav a.active {
 }
 
 @media (max-width: 768px) {
+    #header2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 16px; /* Reduce font size */
+        padding-right: 20px; /* Reduce padding */
+    }
+    .logo {
+        height: 100px;
+        padding-left: 0;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px; /* Adjust gap */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .project-content {
+        order: 1; /* Ensure content comes first */
+    }
+
+    .project-image,
+    .project-frame {
+        order: 2; /* Ensure media comes after content */
+        width: 100%; /* Ensure full width */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .project-content h2 {
+        font-size: 2em; /* Adjust font size */
+    }
+
+    .project-content p {
+        font-size: 1em; /* Adjust font size */
+    }
+
     .projects-grid {
         padding: 20px;
     }
-    
-    .project-frame, 
-    .project-image {
-        height: 350px;
-        border-width: 15px;
-    }
+
     
     .project-item h2 {
         font-size: 2em;
@@ -343,9 +439,57 @@ nav a.active {
     .button-logo {
         height: 16px;
     }
+
+    .bait {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .bait section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .bait p {
+        font-size: 30px; 
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contact-button {
+        font-size: 16px; 
+        padding: 6px 12px; 
+    }
+
+    .contact-button img {
+        height: 16px; 
+    }
 }
 
 @media (max-width: 480px) {
+    #header2 {
+        font-size: 20px;
+    }
+    nav a {
+        font-size: 14px; 
+        padding-right: 15px; 
+    }
+
+
+    .project-item {
+        padding: 15px; 
+    }
+
+    .project-content h2 {
+        font-size: 1.5em; 
+    }
+
+    .project-content p {
+        font-size: 0.9em; 
+    }
+
+
+
     .project-item h2 {
         font-size: 1.5em;
     }
@@ -376,5 +520,18 @@ nav a.active {
 
     .button-logo {
         height: 14px;
+    }
+
+    .bait p {
+        font-size: 24px; 
+    }
+
+    .contact-button {
+        font-size: 14px; 
+        padding: 4px 10px; 
+    }
+
+    .contact-button img {
+        height: 14px; 
     }
 }

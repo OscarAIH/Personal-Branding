@@ -123,42 +123,51 @@ h2 {
 .attention {
     margin-top: 100px; 
     margin-bottom: -10px;
-    background-color: #1A1A13; /* Set background color to dark green */
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    text-align: center; /* Center text within the section */
-    padding: 20px; /* Add padding for spacing */
+    background-color: #1A1A13; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 40px 20px;
 }
 
 .attention section {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: row; /* Align items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Space between text and button */
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    gap: 20px; 
 }
 
 .attention p {
-    font-size: 50px; /* Adjust font size if needed */
-    margin: 0; /* Remove default margin */
-    color: #FBEE7E; /* Set text color to match the theme */
+    font-size: 50px; 
+    margin: 0; 
+    color: #FBEE7E; 
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-
-.attention {
+.contact-button {
+    font-size: 18px; /* Smaller font size */
     color: #1A1A13;
+    background-color: #FBEE7E;
     border: none;
-    padding: 40px 20px;
+    padding: 8px 16px; /* Adjust padding */
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px; /* Smaller gap */
+    text-decoration: none; /* Remove underline */
     transition: transform 0.3s ease;
 }
 
-.attention button:hover {
-    transform: scale(1.1);
+.contact-button img {
+    height: 20px; /* Smaller logo size */
+    width: auto;
+}
+
+.contact-button:hover {
+    transform: scale(1.05);
 }
 
 
@@ -311,6 +320,8 @@ button img {
     width: 400px; /* Adjust size as needed */
     z-index: 1;
 }
+
+
 
 /* Responsiv design */
 @media (max-width: 768px) {

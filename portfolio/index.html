@@ -6,8 +6,11 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/side2.css">
+    <link rel="stylesheet" href="css/side3.css">
 </head>
 <body>
+
+
     <header>
         <img src="assets/OutlineLogo.png" alt="Logo" class="logo">
         <nav>
@@ -34,19 +37,17 @@
         </section>
     </main>
 
-    <aside class="attention">
-        <section>
+    <aside class="bait"> 
+        <section class="attention" >
             <div>
                 <p>Kontakt mig her</p>
             </div>
-
-                <button>
-                    KLIK
+            <a href="#footer" class="contact-button">
+                KLIK
                 <img src="assets/outlinefugl.png" alt="fugllogo">
-            </button>
+            </a>
         </section>
     </aside>
-
     <section class="projects-grid">
 
         
@@ -83,8 +84,8 @@
                 <p><strong>Min rolle</strong></p>
                 <p> Jeg arbejdede primært i deskresearch, idegenereing/konceptudvikling også med Wireframes/logo i både figma & illustrator.</p>
             </div>
-            <div class="project-frame" data-url="https://nippon-website-url.com">
-                <iframe src="https://nippon-website-url.com" title="Nippon Project Preview"></iframe>
+            <div class="project-frame" data-url="https://nippon.nemskriveri.nu/?fbclid=IwZXh0bgNhZW0CMTEAAR2utDyskdf_ldNq-DpGIEuz7mM1pJ0oduq1lG-ik1Z-5etBE6PZjhtOyMA_aem_W198VvSHFoHfP0m2pbycZA">
+                <iframe src="https://nippon.nemskriveri.nu/?fbclid=IwZXh0bgNhZW0CMTEAAR3F8IZWvy9FKUQbKo3auUGg-2lgvWUwjMI5Nuzkwpg1M6JHHtrm2Cv6cpM_aem_9Aorh7ccEN9gDo4dT2UUkw" title="Nippon Project Preview"></iframe>
                 <div class="frame-overlay">
                     <span>
                         Click to expand
@@ -118,15 +119,16 @@
         <article class="project-item">
             <div class="project-content">
                 <h2>Logoer</h2>
-                <p>Lorem ipsum text here...</p>
+                <p>Jeg har primært været med i Konceptudviklingen og udviklingen af den visuelle identiet ved hjælp af processer som
+                    mindmap, skitser og wireframes. Jeg har brugt værktøjer som figma, photoshop og illustrator.</p>
             </div>
-            <div class="project-image">
+            <div class="project-image-center">
                 <video autoplay loop muted playsinline class="video2">
                     <source src="assets/logo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
         </article>
-        
     </section>
 
     <!-- Popup overlay -->
@@ -137,7 +139,54 @@
         </div>
     </div>
 
-    <footer class="footer-section">
+    <aside class="bait">
+        <section class="attention2" >
+            <div>
+                <p>Anden gang er lykkens gang kontakt her</p>
+            </div>
+            <a href="#footer" class="contact-button">
+                KLIK
+                <img src="assets/outlinefugl.png" alt="fugllogo">
+            </a>
+        </section>
+    </aside>
+    
+<!-- Sidste side!-->
+<div id="header3">
+    <div class="logo">
+        <img src="assets/Outlinelogo.png" alt="Logo">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Forside</a></li>
+            <li><a href="#projects">Projekter</a></li>
+            <li><a href="#about-me" class="active">Om mig</a></li>
+        </ul>
+    </nav>
+</div>
+
+<section id="about-me" class="about-section">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="path/to/your-image1.jpg" alt="Description of image 1">
+        </div>
+        <div class="about-video">
+            <video controls>
+                <source src="path/to/your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="about-content">
+        <h2>Om mig</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p>Kontakt</p>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer id="footer" class="footer-section">
         <section class="footer-content">
             <article class="contact-info">
                 <p>Ingen vej uden om nu</p>
