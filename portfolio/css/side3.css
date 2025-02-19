@@ -53,25 +53,50 @@ nav a.active {
     margin-bottom: 20px;
 }
 
-.about-image, .about-video {
+.about-image {
+    flex: 1; /* Smaller flex value for the image */
+    max-width: 400px; /* Set a smaller maximum width */
+    border: 5px solid #FBEE7E;
+    padding: 10px;
+}
+
+.about-video {
+    flex: 2; /* Larger flex value for the video */
+    max-width: 800px; /* Set a larger maximum width */
     border: 5px solid #FBEE7E;
     padding: 10px;
 }
 
 .about-image img, .about-video video {
-    max-width: 100%;
+    width: 100%; /* Ensure they fill the container */
     height: auto;
     display: block;
 }
 
-.about-content h2 {
+.about-content {
+    max-width: 800px; /* Begræns bredden af tekstområdet */
+    margin: 0 auto; /* Centrer hele indholdet */
+    padding: 20px;
+    text-align: center; /* Centrer tekst og overskrifter */
+}
+
+.about-content h2, .about-content h3 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #1A1A13;
 }
+
 
 .about-content p {
     font-size: 1.2em;
     line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px; /* Begræns bredden af hver paragraf */
+    margin: 0 auto; /* Centrer hver paragraf */
+}
+
+.about-content p + p {
+    margin-top: 40px; /* Ekstra mellemrum mellem specifikke afsnit */
 }
 
 /* Responsive adjustments */
@@ -89,6 +114,10 @@ nav a.active {
     .about-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    .about-image, .about-video {
+        max-width: 100%; /* Allow full width on smaller screens */
     }
 
     .about-content h2 {
