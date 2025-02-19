@@ -56,15 +56,14 @@ nav a.active {
 .about-image {
     flex: 1; /* Smaller flex value for the image */
     max-width: 400px; /* Set a smaller maximum width */
-    border: 5px solid #FBEE7E;
-    padding: 10px;
+    border: 15px solid #1A1A13;
 }
 
 .about-video {
     flex: 2; /* Larger flex value for the video */
     max-width: 800px; /* Set a larger maximum width */
-    border: 5px solid #FBEE7E;
-    padding: 10px;
+    height: 100%;
+    border: 15px solid #1A1A13;
 }
 
 .about-image img, .about-video video {
@@ -99,6 +98,27 @@ nav a.active {
     margin-top: 40px; /* Ekstra mellemrum mellem specifikke afsnit */
 }
 
+.icons-section {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.icon-item {
+    text-align: center;
+}
+
+.icon-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.icon-item img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
     #header3 {
@@ -126,5 +146,18 @@ nav a.active {
 
     .about-content p {
         font-size: 1em;
+    }
+
+    .icons-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon-item h3 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+
+    .icon-item img {
+        width: 60px; /* Adjust icon size for smaller screens */
     }
 }
