@@ -21,7 +21,7 @@
 
     <main>
         <section id="forside">
-            <div class="background-effect"></div> <!-- New div for the background -->
+            <div class="background-effect"></div>
             <h1>Portfolio</h1>
             <p id="subtitle" class="subtitle">Multimedie designer Grafisk designer & UX/UI</p>
             <div class="images-container">
@@ -39,50 +39,103 @@
             <div>
                 <p>Kontakt mig her</p>
             </div>
-            <button>
-                <p>klik her</p>
+
+                <button>
+                    KLIK
                 <img src="assets/outlinefugl.png" alt="fugllogo">
             </button>
         </section>
-    </aside >
+    </aside>
 
     <section class="projects-grid">
+
+        
+
+        <div id="header2">
+            <img src="assets/OutlineLogo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#forside">Forside</a></li>
+                    <li><a href="#projekter" class="active">Projekter</a></li>
+                    <li><a href="#om-mig">Om mig</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <article class="project-item">
-            <h2>1 Semester Eksame</h2>
-            <p>Lorem ipsum text here...</p>
+            <div class="project-content">
+                <h2>Zerobuzz brew</h2>
+                <p>1. Semester eksame var invidiuel og gik ud på at skabe en online tilstedeværelse for et fiktiv alkoholfri ølbrand der hed Zerobuzz brew. 
+                    Dette var første gang jeg fik fingrene i både illustrator og Photoshop, og jeg er til dags dato stadig tilfreds med de produkter jeg fik lavet, især min alkoholfrie IPA øl.
+                </p>
+            </div>
             <div class="project-image">
-                <img src="path-to-your-image.jpg" alt="1 Semester Eksame Project">
+                <video autoplay loop muted playsinline class="video1">
+                    <source src="assets/F7EF7E.mp4" type="video/mp4">
+                </video>
             </div>
-            <p class="kontakt">Kontakt</p>
         </article>
-    
+        
         <article class="project-item">
-            <h2>Nippon</h2>
-            <p>I dette projekt arbejdede vi i grupper med UX/UI design. Opgaven omhandlede redesign af den japanske kokkens. Nippon skulle fungere som en online platform, der hjælper unge familier, singler og ældre med at få japanske retter introduceret, der er tilpasset deres individuelle behov</p>
+            <div class="project-content">
+                <h2>Nippon</h2>
+                <p>I dette projekt arbejdede vi i grupper med UX/UI design. Opgaven omhandlede redesign af det japanske koekken. Nippon skulle fungere som en online platform, der hjælper unge familier, singler og ældre med at få japanske retter introduceret igennem måltidskasser.</p>
+                <p><strong>Min rolle</strong></p>
+                <p> Jeg arbejdede primært i deskresearch, idegenereing/konceptudvikling også med Wireframes/logo i både figma & illustrator.</p>
+            </div>
+            <div class="project-frame" data-url="https://nippon-website-url.com">
+                <iframe src="https://nippon-website-url.com" title="Nippon Project Preview"></iframe>
+                <div class="frame-overlay">
+                    <span>
+                        Click to expand
+                        <img src="assets/outlinefugl.png" alt="Logo" class="button-logo">
+                    </span>
+                </div>
+            </div>
+        </article>
+        
+        <article class="project-item">
+            <div class="project-content">
+                <h2>KP Foto</h2>
+                <p>2. Semester gruppe eksame, gik ud på at udvikle et koncept og en interaktiv digital prototype af en virksomhed.
+                    Vi valgte en fotograf i Silkeborg der trængte til en ny visuel identiet og bedre organiseret website iforhold til booking & Bestilling af billeder
+                </p>
+                <p><strong>Min rolle</strong></p>
+                <p>Jeg har primært været med i Konceptudviklingen og udviklingen af den visuelle identiet ved hjælp af processer som
+                     mindmap, skitser og wireframes. Jeg har brugt værktøjer som figma, photoshop og illustrator. </p>
+            </div>
+            <div class="project-frame" data-url="https://nemskriveri.nu/">
+                <iframe src="https://nemskriveri.nu/" title="KPfoto Project Preview"></iframe>
+                <div class="frame-overlay">
+                    <span>
+                        Click to expand
+                        <img src="assets/outlinefugl.png" alt="Logo" class="button-logo">
+                    </span>
+                </div>
+            </div>
+        </article>
+        
+        <article class="project-item">
+            <div class="project-content">
+                <h2>Logoer</h2>
+                <p>Lorem ipsum text here...</p>
+            </div>
             <div class="project-image">
-                <img src="path-to-nippon-image.jpg" alt="Nippon Project">
+                <video autoplay loop muted playsinline class="video2">
+                    <source src="assets/logo.mp4" type="video/mp4">
+                </video>
             </div>
-            <p>Mine rolle</p>
         </article>
-    
-        <article class="project-item">
-            <h2>Zerobuzz</h2>
-            <p>Lorem ipsum text here...</p>
-            <div class="project-image">
-                <img src="path-to-zerobuzz-image.jpg" alt="Zerobuzz Project">
-            </div>
-            <p class="kontakt">Kontakt</p>
-        </article>
-    
-        <article class="project-item">
-            <h2>Logoer</h2>
-            <div class="logo-grid">
-                <img src="path-to-nippon-logo.png" alt="Nippon Logo">
-                <img src="path-to-oscar-logo.png" alt="Oscar Logo">
-            </div>
-            <p class="kontakt">Kontakt</p>
-        </article>
+        
     </section>
+
+    <!-- Popup overlay -->
+    <div class="iframe-popup-overlay">
+        <div class="iframe-popup-container">
+            <button class="close-button">×</button>
+            <iframe src="" title="Project Preview" allowfullscreen></iframe>
+        </div>
+    </div>
 
     <footer class="footer-section">
         <section class="footer-content">
@@ -110,10 +163,9 @@
                     <button>Tilmeld</button>
                 </div>
             </aside>
-
         </section>
     </footer>
-
+    <script src="js/projects.js"></script>
     <script src="js/java.js"></script>
 </body>
 </html>
