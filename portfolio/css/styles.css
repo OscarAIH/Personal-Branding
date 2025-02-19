@@ -41,7 +41,7 @@ nav a {
 nav a:hover {
     color: #FBEE7E; 
 }
-
+/* hallo test */
 nav a:active {
     color: #F3E8E1; 
 }
@@ -212,26 +212,26 @@ button img {
 }
 
 .contact-info {
-    flex: 2 1 400px;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 600px;
+    flex: 2 1 400px; /* Allow it to grow and take more space */
+    margin: 0 auto; /* Center it horizontally */
+    text-align: center; /* Center text within the section */
+    max-width: 600px; /* Set a maximum width */
     font-size: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px; /* Øger afstanden mellem elementerne */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Add space between items */
 }
 
 .contact-info p:first-child {
-    font-size: 100px;
-    margin-bottom: 40px; /* Øger afstanden under det første p-element */
+    font-size: 100px; /* Adjust font size for the introductory text */
+    margin-bottom: 20px; /* Space between the intro text and the icons */
 }
 
 .contact-info div {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Øger afstanden mellem ikonet og teksten */
+    display: flex; /* Use flexbox for each row */
+    align-items: center; /* Center items vertically */
+    gap: 10px; /* Space between icon and text */
 }
 
 .contact-info img {
