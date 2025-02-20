@@ -67,11 +67,12 @@ h1 {
 }
 
 .subtitle {
-    font-size: 15px;
+    font-size: 20px;
     color: #FBEE7E;
+
     position: absolute;
     top: 20%; /* Juster for at placere teksten korrekt under h1 */
-    left: 30%;
+    left: 33%;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 1;
@@ -120,7 +121,52 @@ h2 {
     margin-top: 50px;
 }
 
-.attention {
+/* styling a javascript pil */
+.scroll-arrow {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.arrow {
+    padding: 20px;
+    animation: bounce 2s infinite;
+}
+
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #1A1A13;
+    border-right: 5px solid #1A1A13;
+    transform: rotate(45deg);
+    margin: -25px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.attention { /* CTA funktion er på alle sider */
     margin-top: 100px; 
     margin-bottom: -10px;
     background-color: #1A1A13; 
@@ -135,7 +181,7 @@ h2 {
     display: flex; 
     flex-direction: row; 
     align-items: center; 
-    gap: 20px; 
+    gap: 40px; 
 }
 
 .attention p {
@@ -147,17 +193,17 @@ h2 {
 }
 
 .contact-button {
-    font-size: 18px; /* Smaller font size */
+    font-size: 18px; 
     color: #1A1A13;
     background-color: #FBEE7E;
     border: none;
-    padding: 8px 16px; /* Adjust padding */
+    padding: 8px 16px; 
     border-radius: 5px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px; /* Smaller gap */
-    text-decoration: none; /* Remove underline */
+    gap: 5px; 
+    text-decoration: none; 
     transition: transform 0.3s ease;
 }
 
@@ -195,7 +241,7 @@ button img {
     height: 20px;
 }
 
-@keyframes pulse { /* den her har reddet min dag, ingen ide om hvad den gør */
+@keyframes pulse { 
     0%, 100% {
         transform: scale(1);
     }
@@ -356,14 +402,13 @@ button img {
     }
 
     .subtitle {
-        font-size: 12px;
-        position: relative; /* Change to relative for natural flow */
-        top: auto; /* Remove top positioning */
-        left: auto; /* Remove left positioning */
-        transform: none; /* Remove transform */
-        text-align: center;
-        z-index: 3;
-        margin-top: 10px; /* Add margin to separate from h1 */
+        font-size: 15px;
+        color: #FBEE7E;
+        position: relative; 
+        margin-top: 20px; 
+        text-align: center; 
+        z-index: 2;
+        opacity: 1;
     }
 
     .images-container {

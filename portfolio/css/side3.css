@@ -154,10 +154,10 @@ nav a.active {
     }
 
     .icon-item h3 {
-        font-size: 1.2em; /* Adjust font size for smaller screens */
+        font-size: 1.2em; 
     }
 
     .icon-item img {
-        width: 60px; /* Adjust icon size for smaller screens */
+        width: 60px; 
     }
 }

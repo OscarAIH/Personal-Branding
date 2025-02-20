@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/side2.css">
     <link rel="stylesheet" href="css/side3.css">
+
+    <title>Oscar Adam Iversen Hansen - Multimediedesigner & UX/UI Portfolio | Aarhus</title>
+    <meta name="description" content="Portfolio for Oscar Adam Iversen Hansen, multimediedesigner og UX/UI designer fra Gråsten, nu bosiddende i Aarhus. Se projekter inden for digital design, branding og webdesign.">
+    <meta name="keywords" content="multimediedesigner, UX/UI design, webdesign, grafisk design, portfolio, Aarhus, Zerobuzz brew, Nippon, KP Foto">
+    <meta name="author" content="Oscar Adam Iversen Hansen">
+
+
+    <meta property="og:title" content="Oscar Hansen - Multimediedesigner Portfolio">
+    <meta property="og:description" content="Se mine projekter inden for digital design, UX/UI og grafisk design. Baseret i Aarhus.">
+    <meta property="og:image" content="assets/OutlineLogo.png">
+    <meta property="og:url" content="[Din website URL]">
+    <meta property="og:type" content="website">
+
+<!--Favicon-->
+    <link rel="icon" type="image/png" href="assets/outlinefugl.png">
+
 </head>
 <body>
 
@@ -37,6 +52,13 @@
         </section>
     </main>
 
+    <div class="scroll-arrow">
+        <div class="arrow">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
     <aside class="bait"> 
         <section class="attention" >
             <div>
@@ -48,7 +70,7 @@
             </a>
         </section>
     </aside>
-    <section class="projects-grid">
+    <section id="projekter" class="projects-grid">
 
         
 
@@ -98,15 +120,15 @@
         <article class="project-item">
             <div class="project-content">
                 <h2>KP Foto</h2>
-                <p>2. Semester gruppe eksame, gik ud på at udvikle et koncept og en interaktiv digital prototype af en virksomhed.
-                    Vi valgte en fotograf i Silkeborg der trængte til en ny visuel identiet og bedre organiseret website iforhold til booking & Bestilling af billeder
+                <p>2. Semester var en gruppe eksame, som gik ud på at udvikle et koncept og en interaktiv digital prototype af en virksomhed.
+                    Vi valgte en fotograf virksomhed i Silkeborg der trængte til en ny visuel identiet og bedre organiseret website iforhold til booking & Bestilling af billeder
                 </p>
                 <p><strong>Min rolle</strong></p>
                 <p>Jeg har primært været med i Konceptudviklingen og udviklingen af den visuelle identiet ved hjælp af processer som
                      mindmap, skitser og wireframes. Jeg har brugt værktøjer som figma, photoshop og illustrator. </p>
             </div>
-            <div class="project-frame" data-url="https://nemskriveri.nu/">
-                <iframe src="https://nemskriveri.nu/" title="KPfoto Project Preview"></iframe>
+            <div class="project-frame" data-url="https://kpfoto.nemskriveri.nu/">
+                <iframe src="https://kpfoto.nemskriveri.nu/" title="KPfoto Project Preview"></iframe>
                 <div class="frame-overlay">
                     <span>
                         Click to expand
@@ -119,8 +141,8 @@
         <article class="project-item">
             <div class="project-content">
                 <h2>Logoer</h2>
-                <p>Jeg har primært været med i Konceptudviklingen og udviklingen af den visuelle identiet ved hjælp af processer som
-                    mindmap, skitser og wireframes. Jeg har brugt værktøjer som figma, photoshop og illustrator.</p>
+                <p>Her er nogle af de logoer, jeg har haft en stor rolle i at designe. Jeg synes, det er sjovt at arbejde med logoer i Illustrator,
+                     da jeg kan udforske forskellige kreative idéer og finde den perfekte balance mellem enkelhed og genkendelighed</p>
             </div>
             <div class="project-image-center">
                 <video autoplay loop muted playsinline class="video2">
@@ -135,7 +157,7 @@
     <div class="iframe-popup-overlay">
         <div class="iframe-popup-container">
             <button class="close-button">×</button>
-            <iframe src="" title="Project Preview" allowfullscreen></iframe>
+            <iframe src="test" title="Project Preview" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -172,7 +194,7 @@
         </div>
         <div class="about-video">
             <video controls>
-                <source src="assets/maleri.MOV" type="video/mp4">
+                <source src="assets/maleri.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -189,15 +211,15 @@
         <div class="icons-section">
             <div class="icon-item">
                 <h3>Nysgerrig</h3>
-                <img src="assets/nyssgerrighed 1.png" alt="Nysgerrig Icon">
+                <img src="assets/nyssgerrighed1.png" alt="Nysgerrig Icon">
             </div>
             <div class="icon-item">
                 <h3>Iderig</h3>
-                <img src="assets/Iderig 1.png" alt="Iderig Icon">
+                <img src="assets/Iderig1.png" alt="Iderig Icon">
             </div>
             <div class="icon-item">
                 <h3>Samarbejdende</h3>
-                <img src="assets/samarbejde 1.png" alt="Samarbejde Icon">
+                <img src="assets/samarbejde1.png" alt="Samarbejde Icon">
             </div>
         </div>
     </div>
@@ -233,5 +255,7 @@
     </footer>
     <script src="js/projects.js"></script>
     <script src="js/java.js"></script>
+    <script src="js/arrow.js"></script>
+
 </body>
 </html>
